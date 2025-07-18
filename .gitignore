@@ -38,3 +38,5 @@ Thumbs.db
 
 # Environment Variable #
 .env
+dist/.DS_Store
+src/.DS_Store
