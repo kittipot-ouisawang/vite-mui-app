@@ -5,9 +5,9 @@ import { Box } from '@mui/material';
 
 const HomePage = () => {
     const images = [
-        { url: "../../src/assets/images/store_outside.jpg" },
-        { url: "../../src/assets/images/store_inside.jpg" },
-        { url: "../../src/assets/images/service_zone.jpg" },
+        { fileName: "store_outside.png" },
+        { fileName: "store_inside.png" },
+        { fileName: "service_zone.png" },
     ];
 
     return(

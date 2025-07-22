@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Box, IconButton } from '@mui/material';
 import ArrowBackIosNewIcon from '@mui/icons-material/ArrowBackIosNew';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
+import { getImageUrl } from './assetHelper';
 
 // The main component, which accepts an array of image objects
 const ImageSlider = ({ images }) => {
@@ -68,7 +69,7 @@ const ImageSlider = ({ images }) => {
           borderRadius: '10px', // Optional: for rounded corners
           backgroundSize: 'cover',
           backgroundPosition: 'center',
-          backgroundImage: `url(${images[currentIndex].url})`,
+          backgroundImage: `url(${getImageUrl(images[currentIndex].fileName)})`,
           transition: 'background-image 0.5s ease-in-out',
         }}
       />
