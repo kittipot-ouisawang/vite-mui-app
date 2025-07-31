@@ -23,12 +23,15 @@ const AboutPage = () => {
                 </Typography>
                 <br />
                 <Divider flexItem/>
-                <Typography variant="h6" sx={{ mt: 2 }}>Follow Us:</Typography>
+                <Typography variant="h6" sx={{ mt: 2 }}>Our social media:</Typography>
                 <Box sx={{ display: 'flex', alignItems: 'center'}}>
                     <FacebookIcon sx={{ display: 'flex',  mb: "3px"}}/> 
                     <Link href="https://www.facebook.com/whalebikeshop" underline="hover" target="_blank" color="white" rel="noopener"> Whale Bike Shop</Link>
                 </Box>
-             </Box>
+                <Box sx={{ display: 'flex', alignItems: 'center'}}>
+                    <Link href="https://lin.ee/kPCv8t4"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"/></Link>
+                </Box>
+            </Box>
          </PageContainer>
     );
 }

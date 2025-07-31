@@ -36,6 +36,9 @@ const LocationPage = () => {
                 </Typography>
                 <Typography variant="body1">
                     Line: @Whalebike
+                    <Box sx={{ display: 'flex', alignItems: 'center'}}>
+                        <Link href="https://lin.ee/kPCv8t4"><img src="https://scdn.line-apps.com/n/line_add_friends/btn/th.png" alt="เพิ่มเพื่อน" height="36" border="0"/></Link>
+                    </Box>
                 </Typography>
                 <br />
                 <Divider flexItem/>

@@ -1,6 +1,7 @@
 import * as React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import HomePage from './components/pages/HomePage.jsx';
+import ServicePage from './components/pages/ServicePage.jsx';
 import LocationPage from './components/pages/LocationPage.jsx';
 import AboutPage from './components/pages/AboutPage.jsx';
 //import ProductManagementPage from './components/pages/ProductManagementPage.jsx';
@@ -10,7 +11,7 @@ import AuthContext from './components/AuthContext.jsx';
 import { jwtDecode } from 'jwt-decode';
 import { useState } from 'react';
 
-const pages = ["Home", "Location", "About"];
+const pages = ["Home", "Service", "Location", "About"];
 const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
         <Route path="/" element={<ResponsiveAppBar pages={pages} settings={settings} />}>
           <Route index element={<HomePage />} />
           <Route path="home" element={<HomePage />} />
+          <Route path="service" element={<ServicePage />} />
           <Route path="location" element={<LocationPage />} />
           <Route path="about" element={<AboutPage />} />
         </Route>
