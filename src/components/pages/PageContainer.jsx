@@ -8,7 +8,7 @@ export default function PageContainer(props) {
     <React.Fragment>
       <CssBaseline />
       <Container maxWidth="lr">
-        <Box sx={{ height: '130vh', bgcolor: 'cornflowerblue' }} >
+        <Box sx={{ bgcolor: 'cornflowerblue' }} >
             {props.children}
         </Box>
       </Container>

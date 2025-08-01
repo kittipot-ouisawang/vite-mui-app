@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 const AboutPage = () => {
     return(
         <PageContainer maxWidth="lg" sx={{ mt: 4, mb: 4 }}>
-            <Box sx={{ mb: 4, p: 3 }}>
+            <Box sx={{ mb: 4, p: 3 , flexGrow: 1 , minHeight: 700 }}>
                 <Typography variant="h4" gutterBottom>
                     More About Us
                 </Typography>

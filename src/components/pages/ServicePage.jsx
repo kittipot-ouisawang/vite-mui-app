@@ -68,13 +68,12 @@ const cleaningRows = [
 
 const ServicePage = () => {
     return (<PageContainer>
-             <Box sx={{ mb: 4, p: 3, flexGrow: 1 }}>
-                <Tooltip title="service charge" placement="bottom-start" arrow><Typography variant="h4" gutterBottom>ค่าบริการเบื้องต้น</Typography></Tooltip>
-                  
+             <Box sx={{ mb: 4, p: 3, flexGrow: 1, minHeight: 700 }}>
+                <Tooltip title="ค่าบริการเบื้องต้น" placement="bottom-start" arrow><Typography variant="h4" gutterBottom>Service Charge</Typography></Tooltip>
                         <Grid container spacing={2} columns={16}>
                             <Grid size={8}>
                             <Box sx={{ flexGrow: 1 , height: 650}}>
-                            <DataGrid
+                            <DataGrid   
                                     rows={cleaningRows}
                                     columns={cleaningColumns}
                                     initialState={{

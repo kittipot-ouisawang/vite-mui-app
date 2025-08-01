@@ -27,11 +27,6 @@ const WhaleBikeMap = () => {
   // Added zoom=16 for a good initial view, you can adjust this.
 
   return (
-    <Box sx={{ padding: 3 }}>
-      <Typography variant="h6" component="h1" gutterBottom>
-        Location
-      </Typography>
-
       <Paper elevation={3} sx={{ overflow: 'hidden', borderRadius: '8px' }}>
         <Box sx={{ width: '100%', height: { xs: 300, sm: 400, md: 500 } }}>
           <iframe
@@ -46,7 +41,6 @@ const WhaleBikeMap = () => {
           ></iframe>
         </Box>
       </Paper>
-    </Box>
   );
 };
 
