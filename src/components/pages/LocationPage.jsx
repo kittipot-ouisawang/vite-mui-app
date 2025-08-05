@@ -33,6 +33,9 @@ const LocationPage = () => {
                     <Typography variant="body1">
                         Saturday - Sunday: 9:00 AM - 5:00 PM
                     </Typography>
+                     <Typography variant="body1"sx={{ mt: 1} }>
+                        *วันหยุดนักขัตฤกษ์กรุณาติดต่อทางร้านตามช่องทางที่ให้ไว้ด้านล่าง*
+                    </Typography>
                     <br />
                     <Divider flexItem/>
                     <Typography variant="h6" sx={{ mt: 2 }}>Contact Information:</Typography>

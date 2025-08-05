@@ -14,9 +14,7 @@ import MenuItem from '@mui/material/MenuItem';
 import IconImage from '../display/IconImage';
 import LoginButton from './LoginButton';
 
-
-
-function ResponsiveAppBar({ pages, settings }) {
+function ResponsiveAppBar({ pages }) {
   return (
     <AppBar position="static">
       <Container maxWidth="xl">
@@ -114,11 +112,6 @@ function ResponsiveAppBar({ pages, settings }) {
               }}
 
             >
-              {settings.map((setting) => (
-                <MenuItem key={setting}>
-                  <Typography sx={{ textAlign: 'center' }}>{setting}</Typography>
-                </MenuItem>
-              ))}
             </Menu>
           </Box>
         </Toolbar>

@@ -12,7 +12,6 @@ import { jwtDecode } from 'jwt-decode';
 import { useState } from 'react';
 
 const pages = ["Home", "Service", "Location", "About"];
-const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
 function App() {
    // State to hold the user's profile object
@@ -39,7 +38,7 @@ function App() {
        // Provide the user state and the login/logout functions to the entire app
     <AuthContext value={{ user, setUser, handleLoginSuccess, handleLogout }}>
       <Routes>
-        <Route path="/" element={<ResponsiveAppBar pages={pages} settings={settings} />}>
+        <Route path="/" element={<ResponsiveAppBar pages={pages} />}>
           <Route index element={<HomePage />} />
           <Route path="home" element={<HomePage />} />
           <Route path="service" element={<ServicePage />} />
