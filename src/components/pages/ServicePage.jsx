@@ -27,15 +27,15 @@ const serviceRows = [
   { id: 1, serviceName: 'ตั้งเกียร์', price: '150 - 300 บาท'},
   { id: 2, serviceName: 'เปลี่ยนเฟือง', price: '100 บาท' },
   { id: 3, serviceName: 'เปลี่ยนยาง', price: '50 บาท' },
-  { id: 4, serviceName: 'เปลี่ยนโซ่', price: '50 - 100 บาท' },
+  { id: 4, serviceName: 'เปลี่ยนโซ่', price: '100 บาท' },
   { id: 5, serviceName: 'ประกอบรถ ไม่ซ่อนสาย', price: 'เรื่มต้น 1,500 บาท' },
   { id: 6, serviceName: 'ประกอบรถ ซ่อนสาย', price: 'เรื่มต้น 2,000 บาท' },
-  { id: 7, serviceName: 'ตั้งล้อ 2 แกน', price: '300 บาท' },
-  { id: 8, serviceName: 'ตั้งล้อ 3 แกน', price: '400 บาท' },
+  { id: 7, serviceName: 'ตั้งล้อ 2 แกน ต่อล้อ', price: '300 บาท' },
+  { id: 8, serviceName: 'ตั้งล้อ 3 แกน ต่อล้อ', price: '400 บาท' },
   { id: 9, serviceName: 'ขึ้นล้อ', price: '600 บาท' },
-  { id: 10, serviceName: 'เติมน้ำมันดิสค์เบรค', price: '100 บาท' },
-  { id: 11, serviceName: 'ไล่น้ำมันดิสค์เบรค', price: '300 บาท' },
-  { id: 12, serviceName: 'Full service ดิสค์เบรค', price: '400 บาท' },
+  { id: 10, serviceName: 'เติมน้ำมันดิสค์เบรค ต่อข้าง', price: '100 บาท' },
+  { id: 11, serviceName: 'ไล่น้ำมันดิสค์เบรค ต่อข้าง', price: '300 บาท' },
+  { id: 12, serviceName: 'Full service ดิสค์เบรค ต่อข้าง', price: '400 บาท' },
 ];
 
 const cleaningColumns = [
@@ -58,12 +58,13 @@ const cleaningColumns = [
 ];
 
 const cleaningRows = [
-  { id: 1, cleaningName: 'ล้างภายนอก', price: 'เร่ิมต้น 300 บาท'},
+  { id: 1, cleaningName: 'ล้างภายนอก', price: 'เริ่มต้น 300 บาท'},
   { id: 2, cleaningName: 'ล้างลูกปืนกระโหลก', price: '300 บาท' },
-  { id: 3, cleaningName: 'ล้างลูกปืนล้อหน้า', price: '200 บาท' },
-  { id: 4, cleaningName: 'ล้างลูกปืนล้อหลัง', price: '400 บาท' },
-  { id: 5, cleaningName: 'ล้างลูกปืนล้อหน้า-หลัง', price: '500 บาท' },
-  { id: 6, cleaningName: 'Full Cleaning', price: '2000 บาท' },
+  { id: 3, cleaningName: 'ล้างลูกปืนคอ', price: '300 บาท' },
+  { id: 4, cleaningName: 'ล้างลูกปืนล้อหน้า', price: '200 บาท' },
+  { id: 5, cleaningName: 'ล้างลูกปืนล้อหลัง', price: '400 บาท' },
+  { id: 6, cleaningName: 'ล้างลูกปืนล้อหน้า-หลัง', price: '500 บาท' },
+  { id: 7, cleaningName: 'Full Cleaning', price: '2000 บาท' },
 ];
 
 const ServicePage = () => {
